@@ -5,9 +5,19 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/login', function () {
+    return view('Login');
 });
-Route::resource('user', UserController::class);
-Route::resource('product', ProductController::class);
-Route::resource('cart', CartController::class);
+Route::get('/about',function() {
+    return view('about');
+});
+Route::get('/', function() {
+    return view('Login');
+});
+Route::get('/Register', function () {
+    return view('Register');
+});
+
+//Route::resource('user', UserController::class);
+//Route::resource('product', ProductController::class);
+//Route::resource('cart', CartController::class);
