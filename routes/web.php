@@ -17,8 +17,8 @@ Route::get('/', function() {
 Route::get('/Register', function () {
     return view('Register');
 });
-Route::get('/Layout', function () {
-    return view('Layout');
+Route::get('/header', function () {
+    return view('Header');
 });
 
 //Route::resource('user', UserController::class);
