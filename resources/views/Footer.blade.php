@@ -1,3 +1,3 @@
 <div class="copy-right">
-    WEBG301 - Nguyen Phu Tien - Nguyen Tuan Duong
+    @ WEBG301 - 2024 - Nguyen Phu Tien - Nguyen Tuan Duong
 </div>
