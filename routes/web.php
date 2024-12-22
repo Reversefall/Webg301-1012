@@ -12,10 +12,13 @@ Route::get('/about',function() {
     return view('about');
 });
 Route::get('/', function() {
-    return view('Login');
+    return view('login');
 });
 Route::get('/Register', function () {
     return view('Register');
+});
+Route::get('/Layout', function () {
+    return view('Layout');
 });
 
 //Route::resource('user', UserController::class);
