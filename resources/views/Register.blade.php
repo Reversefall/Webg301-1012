@@ -7,13 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{URL('css/login.css')}}">
-    <title>Login</title>
+    <link rel="stylesheet" href="{{URL('css/register.css')}}">
+    <title>Register</title>
 </head>
 <body>
-    <div class="container">
+<div class="container">
         <div class="form-login">
-            <h1 class="title-login">Login</h1>
+            <h1 class="title-login">Register</h1>
 
             @if (session('success'))
                 <div class="anounce">
@@ -26,7 +26,7 @@
                 </div>
             @endif
 
-            <form action="/login" method="post">
+            <form action="/register" method="post">
                 @csrf
                 <div class="login-email">
                     <label for="email">User Name</label>
@@ -39,11 +39,11 @@
                 @error('message')
                     <div class="anounce-error">{{ $message }}</div>
                 @enderror
-                <button type="submit" class="login-buttom">Sign In</button>
+                <button type="submit" class="login-buttom">Sign Up</button>
             </form>
 
             <div class="content-login">
-                <p>Don't have an account yet? <a class="register-here" href="/Register">Register</a></p>
+                <p>Already have an account? <a class="register-here" href="/login">Login</a></p>
             </div>
         </div>
     </div>
