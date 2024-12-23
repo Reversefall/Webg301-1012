@@ -10,7 +10,7 @@
 <body>
     <header class="header">
         <div id="logoWrapper" class="logo-wrapper">
-            <img src="{{ asset('images/icons8-shopee-70.png') }}" alt="Logo" id="logoImage" class="logo-img">
+            <img src="{{ asset('images/icons8-shopee-48.png') }}" alt="Logo" id="logoImage" class="logo-img">
         </div>              
         <nav class="nav">
             <a href="{{ url('/') }}">Home</a>
