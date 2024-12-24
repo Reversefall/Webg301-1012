@@ -11,8 +11,8 @@ Route::get('/login', function () {
 Route::get('/about',function() {
     return view('about');
 });
-Route::get('/', function() {
-    return view('login');
+Route::get('/layout', function() {
+    return view('/layouts');
 });
 Route::get('/Register', function () {
     return view('Register');
@@ -29,9 +29,7 @@ Route::get('product/{id}/edit', [ProductsController::class, 'edit']);
 Route::resource('products', ProductsController::class);
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 // Route::get('/products', function () {
 //     return view('products/index');

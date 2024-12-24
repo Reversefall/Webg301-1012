@@ -18,9 +18,6 @@
             <a href="{{ url('/contact') }}">Contact</a>
         </nav>
     </header>
-    <main>
-        @yield('content')
-    </main>
     @stack('scripts')
 </body>
 <script>
