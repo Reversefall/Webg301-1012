@@ -20,8 +20,6 @@
                     </a>
                 </div>
             </div>
-            <h3>{{ $product->description }}</h3>
-            <h3>{{ $product->quantity }}</h3>
             </div>
             <span class = "badge bg-primary rounded-pill">
                 {{ $product->price }}

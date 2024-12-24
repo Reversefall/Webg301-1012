@@ -16,7 +16,16 @@
         <input class = "form-control" type="text" name="description" placeholder="Enter description of product">
         <input class = "form-control" type="text" name="quantity" placeholder="Enter quantity of product">
         <input class = "form-control" type="text" name="price" placeholder="Enter price of product">
-
+        <div>
+            <label>Choose a categories:</label>
+            <select name="category_id">
+                @foreach ($categories as $category)
+                    <option value="{{ $category->id }}">
+                        {{ $category->name }}
+                    </option>
+                @endforeach
+            </select>
+        </div>
         <button class = "btn btn-primary" type="submit">Submit</button>
     </form>
 </body>
