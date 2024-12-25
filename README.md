@@ -6,10 +6,10 @@
    cd your-repo
 2. Cách tải laravel breeze về khi muốn lấy code có package này
    - Do trong file composer.json có sẵn laravel breeze rồi nên không cần tải trước khi clone/pull code về mà làm theo dưới đây :
-    composer install
-    php artisan breeze:install
-    npm install && npm run dev
-    php artisan migrate
+    + composer install
+    + php artisan breeze:install
+    + npm install && npm run dev
+    + php artisan migrate
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
