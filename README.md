@@ -18,7 +18,13 @@
     + git commit -m "nội dụng commit"
     + git push -u origin <tên-nhánh-mới>
    - Đừng merge file vì sẽ mất hết 
-
+4.Sau khi clone, các thành viên cần cài đặt môi trường Laravel:
+o Sao chép file .env.example thành .env.
+o Chạy lệnh sau trong terminal:
+o composer install
+o npm install
+o php artisan key:generate
+o php artisan migrate --seed
 
 
 
