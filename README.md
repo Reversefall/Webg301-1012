@@ -7,7 +7,7 @@
 2. Cách tải laravel breeze về khi muốn lấy code có package này
    - Do trong file composer.json có sẵn laravel breeze rồi nên không cần tải trước khi clone/pull code về mà làm theo dưới đây :
     + composer install
-    + php artisan breeze:install
+    + php artisan breeze:install ( note : khi chạy cái này nó sẽ hỏi là chọn package nào thì gõ blade r nó bảo chọn giữa phpunit và 1 cái nữa thì chọn phpunit)
     + npm install && npm run dev
     + php artisan migrate
 3. Cách đẩy 1 file khác lên repo có sẵn mà không đè lên file có sẵn trong git mà vẫn push pull được
