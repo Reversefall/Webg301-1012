@@ -10,6 +10,17 @@
     + php artisan breeze:install
     + npm install && npm run dev
     + php artisan migrate
+3. Cách đẩy 1 file khác lên repo có sẵn mà không đè lên file có sẵn trong git mà vẫn push pull được
+    + Trường hợp chưa clone repo về thì dùng (git clone <URL của repo trên GitHub> sau đó cd repository
+ ) trước khi làm tiếp
+    + git checkout -b <tên-nhánh-mới> ( tạo nhánh/branch mới)
+    + git add <tên-file> ( copy file code muốn cho vào repo)
+    + git commit -m "nội dụng commit"
+    + git push -u origin <tên-nhánh-mới>
+   - Đừng merge file vì sẽ mất hết 
+
+
+
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
