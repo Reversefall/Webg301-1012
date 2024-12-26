@@ -5,12 +5,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
 
-Route::get('/', function () {
-    return view('home.index');
-});
+Route::get('/',[HomeController::class,'home']);
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('home.index');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 
