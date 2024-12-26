@@ -16,6 +16,28 @@
         align-items: center;
         margin: 30px;
     }
+    .table_design
+    {
+      text-align: center;
+      margin : auto;
+      border : 2px solid yellowgreen;
+      margin-top: 50px;
+      width : 600px;
+    }
+    th 
+    {
+      background-color: skyblue;
+      padding : 15px;
+      font-size : 20px;
+      font-weight: bold;
+      color : white;
+    }
+    td 
+    {
+      color : white;
+      padding : 10px;
+      border : 1px solid skyblue;
+    }
   </style>
 </head>
   <body>
@@ -37,6 +59,30 @@
                         <input class="btn btn-primary" type="submit" value ="Add Category">
                     </div>
                 </form>
+            </div>
+            <div>
+              <table class="table_design">
+                <tr>
+                  <th>Category Name</th>
+
+                  <th>Edit</th>
+
+                  <th>Delete</th>
+
+                </tr>
+                @foreach ( $data as $data )
+                <tr>
+                  <td>{{ $data -> category_name }}</td>
+
+                  <td>
+                    <a class="btn btn-success" href="{{url('edit_category',$data->id)}}">Edit</a>
+                  </td>
+                  <td>
+                    <a class="btn btn-danger" href="{{url('delete_category',$data->id)}}">Delete</a>
+                  </td>
+                </tr>
+                @endforeach
+              </table>
             </div>
           </div>
       </div>
